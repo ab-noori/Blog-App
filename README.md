@@ -7,6 +7,7 @@
 |<div align="center"><img src="https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png" alt="screenshot" width="auto" height="auto"/></div>|
 
 <a name="readme-top"></a>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
