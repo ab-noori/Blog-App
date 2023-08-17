@@ -141,11 +141,12 @@ To run tests, run the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Usin the 'Decorator' design pattern]**
-- [ ] **[Sitting up associations]**
-- [ ] **[Adding basic UI]**
-- [ ] **[Preserving data]**
+- [ ] **[Processing data in models]**
+- [ ] **[Views and forms]**
+- [ ] **[Validations, Model specs, and n+1 problems]**
+- [ ] **[Add Devise and authorization rules]**
+- [ ] **[Integration specs for Views]**
+- [ ] **[API documentation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
