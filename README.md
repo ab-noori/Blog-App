@@ -1,6 +1,3 @@
-# Blog-App
-The Blog app will be a classic example of a blog website. A fully functional website that will display the list of posts and empower readers to interact with them by allowing comments to be added and posts to be liked.
-
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
@@ -26,10 +23,9 @@ The Blog app will be a classic example of a blog website. A fully functional web
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [School Library] <a name="about-project"></a>
+# 📖 [Blog Application] <a name="about-project"></a>
 
-> **[School-Library]** application will record the books available in the library and track their borrowers. It will allow new students or teachers to be added, new books to be added, and records of borrowed books and corresponding borrowing dates to be saved. A beautiful and well-organized system will be built to accomplish the task efficiently.
-
+> **[Blog-App]** The Blog app will be a classic example of a blog website. A fully functional website that will display the list of posts and empower readers to interact with them by allowing comments to be added and posts to be liked.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
