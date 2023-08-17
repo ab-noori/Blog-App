@@ -57,9 +57,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Person class with instance vars, constructor, getters, setters, and methods]**
-- **[Student class inheriting from Person with extended constructor and play_hooky method]**
-- **[Teacher class inheriting from Person with extended constructor and overridden can_use_services method]**
+- **[Setup and controllers]**
+- **[Controllers specs]**
+- **[Creating a data model]**
+- **[Processing data in models]**
+- **[Views and forms]**
+- **[Validations, Model specs, and n+1 problems]**
+- **[Add Devise and authorization rules]**
+- **[Integration specs for Views]**
+- **[API documentation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
