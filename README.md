@@ -1,5 +1,11 @@
 <a name="readme-top"></a>
 
+> # Blog Application
+
+| Project ERD |
+|---------------------------------------|
+|<div align="center"><img src="https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png" alt="screenshot" width="auto" height="auto"/></div>|
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
