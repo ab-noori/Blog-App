@@ -3,8 +3,6 @@ class Like < ApplicationRecord
   belongs_to :post
 
   after_save :update_post_likes_counter
-  after_create :update_post_likes_counter
-  after_destroy :update_post_likes_counter
 
   private
 
