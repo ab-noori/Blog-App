@@ -23,6 +23,11 @@ RSpec.describe Like, type: :model do
     expect(subject).to_not be_valid
   end
 
+  it 'Check the Update_post_like_counter' do
+    subject.update_post_likes_counter
+    expect(post.reload.likes_counter).to eq(2)
+  end
+
   it 'increments the likes_counter of the associated post after saving' do
     expect { subject.save }.to change { post.reload.likes_counter }.by(1)
   end
