@@ -48,7 +48,13 @@ RSpec.describe Post, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'should return 5 recent comments' do
+  it 'Check the update_posts_counter, it should increments the posts_counter by 1' do
+    author = User.create!(name: 'John Doe', posts_counter: 0)
+    post = Post.new(title: 'Title', comments_counter: 0, likes_counter: 0, author:)
+    expect { post.save! }.to change { author.reload.posts_counter }.by(1)
+  end
+
+  it 'Check recent_comments, it should return 5 recent comments' do
     expect(subject.recent_comments).to eq(subject.comments.order(created_at: :desc).limit(5))
   end
 end
