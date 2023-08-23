@@ -86,13 +86,10 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- [Ruby on Rails](https://rubyonrails.org/) installed and running. To get more information, read the [installation guide](https://guides.rubyonrails.org/).
 
-Example command:
+- [PostgreSQL](https://www.postgresql.org/) installed and running
 
-```sh
- Install Ruby
- gem install rails
-```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Setup
