@@ -110,8 +110,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/ab-noori/Blog-App.git
+  bundle install
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
