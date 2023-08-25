@@ -1,1 +1,5 @@
-<h1>List of Users</h1>
+<section class="container my-3 mx-auto p-5 border rounded border-success">
+  <div>
+    <%= render partial: "shared/user_summary", collection: @users, as: :user || ">No users found"%>
+  </div>
+</section> 
