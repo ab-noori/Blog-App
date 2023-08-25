@@ -1,0 +1,8 @@
+<div class="container d-flex flex-column justify-content-center align-items-center bg-light border rounded py-4 post_summary">
+  <h2 class="col-lg-6 col-md-12 post_title"> Post # <%= post.id %> </h2>
+  <p class="col-lg-6 col-md-12 post_text"><%= truncate(post.text, length: 250, omission: "...") %></p>
+  <div class="col-lg-6 col-md-12 d-flex align-self-end">
+    <p class="mx-2">Comments: <%= post.comments_counter || 0 %></p>
+    <p class="mx-2">Likes: <%= post.likes_counter || 0 %></p>
+  </div>
+</div>
