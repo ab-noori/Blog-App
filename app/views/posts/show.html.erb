@@ -1,1 +1,8 @@
-<h1>Post Details</h1>
+<section class="container mx-auto my-3 mx-5 p-5 border rounded border-success">
+  <%= render partial: 'shared/post_summary', locals: { post: @post} %>
+  <div class="container bg-light border-0 rounded">
+    <% @post.comments.each do |comment| %>
+      <%= render partial: 'shared/recent_comments', locals: { comment: comment } %>
+    <% end %>
+  </div>
+</section>

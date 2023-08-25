@@ -1,1 +1,18 @@
-<h1>User Profile</h1>
+<section class="container d-flex flex-column my-3 mx-auto p-5 border rounded border-success">
+  <%= render partial: "shared/user_summary", locals: {user: @user || "No users found"} %>
+
+  <div class="container d-flex flex-column p-5 justify-content-center align-items-center bg-info border rounded py-4">
+    <h3 class="col-lg-6 col-md-12">Bio</h3>
+    <p class="col-lg-6 col-md-12"><%= @user.bio %></p>
+  </div>
+
+  <% @recent_posts.each do |post| %>
+    <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post_partial" do %>
+      <%= render partial: 'shared/post_summary', locals: { post: post } %>
+    <% end %>
+  <% end %>
+
+  <%= link_to user_posts_path(@user), class: "col-6 btn btn-success mt-3 p-2 align-self-center" do %>
+    See all Posts
+  <% end %>
+</section>

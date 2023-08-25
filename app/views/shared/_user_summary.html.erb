@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-center align-items-center bg-light border rounded py-4 user_card">
+  <div class="col-lg-3 col-md-6 user_img">
+    <i class="fa-solid fa-user fa-2xl"></i>
+  </div>
+  <div class="col-lg-4 col-md-6 user_highlight">
+    <h3 class="d-flex justify-content-start align-items-center"><%= link_to  user.name, user_path(user) %></h3>
+    <p class="d-flex justify-content-end align-items-center">Number of posts: <%= user.posts.count || 0 %></p>
+  </div>
+</div>

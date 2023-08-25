@@ -1,1 +1,14 @@
-<h1>Posts for a User</h1>
+<section class="container d-flex flex-column mx-auto my-3 mx-5 p-5 border rounded border-success">
+  <%= render partial: "shared/user_summary", locals: {user: @user || "No users found"} %>
+  <% @posts.each do |post| %>
+    <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post_partial" do %>
+      <%= render partial: 'shared/post_summary', locals: { post: post} %>
+    <% end %>
+    <div class="container bg-light border-0 rounded">
+      <% post.recent_comments.each do |comment| %>
+        <%= render partial: 'shared/recent_comments', locals: { comment: comment } %>
+      <% end %>
+    </div>
+  <% end %>
+  <button type="button" class="col-4 btn btn-success mt-3 p-2 align-self-center"><< Pagination >></button> 
+</section>
