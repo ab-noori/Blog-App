@@ -4,8 +4,8 @@ class CreatePosts < ActiveRecord::Migration[7.0]
       t.integer :author_id
       t.string :title
       t.text :text
-      t.integer :comments_counter
-      t.integer :likes_counter
+      t.integer :comments_counter, default: 0
+      t.integer :likes_counter, default: 0
 
       t.timestamps
     end
@@ -13,3 +13,4 @@ class CreatePosts < ActiveRecord::Migration[7.0]
     add_index :posts, :author_id
   end
 end
+

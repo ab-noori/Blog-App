@@ -4,5 +4,8 @@
   <div class="col-lg-6 col-md-12 d-flex align-self-end">
     <p class="mx-2">Comments: <%= post.comments_counter || 0 %></p>
     <p class="mx-2">Likes: <%= post.likes_counter || 0 %></p>
+    <%= form_with(model: [post, post.likes.build], url: user_post_likes_path(post.author, post), method: :post, class: 'like-form') do |form| %>
+      <%= form.submit "Like", class: "btn btn-primary" %>
+    <% end %>
   </div>
 </div>

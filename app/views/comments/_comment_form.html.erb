@@ -1,0 +1,8 @@
+<%= form_with(model: [@post, Comment.new], url: user_post_comments_path(@post.author, @post), local: true, html: { class: "form" }) do |form| %>
+  <div class="form-group">
+    <%= form.label :comment, class: "control-label" %>
+    <%= form.text_area :text, class: "form-control", rows: 4 %>
+  </div>
+  
+  <%= form.submit "Add Comment", class: "btn btn-primary" %>
+<% end %>
