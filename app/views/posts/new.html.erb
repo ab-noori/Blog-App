@@ -1,0 +1,26 @@
+<div class="container d-flex flex-column mx-auto my-3 mx-5 p-5 border rounded border-success">
+  <%= form_with(model: [@current_user, @post], url: user_posts_path(@current_user), class: 'form') do |form| %>
+    <div class="form-group">
+      <%= form.label :title %>
+      <%= form.text_field :title, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :comment %>
+      <%= form.text_area :text, class: 'form-control' %>
+    </div>
+
+    <%= form.submit "Create Post", class: 'btn btn-primary' %>
+  <% end %>
+
+  <% if @post.errors.any? %>
+    <div class="alert mt-5 alert-danger">
+      <h4><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h4>
+      <ul>
+        <% @post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

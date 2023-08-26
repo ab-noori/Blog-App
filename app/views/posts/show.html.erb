@@ -5,4 +5,8 @@
       <%= render partial: 'shared/recent_comments', locals: { comment: comment } %>
     <% end %>
   </div>
+  
+  <div id="comment-form-container" class="container mt-3">
+    <%= render partial: 'comments/comment_form', post: @post %>
+  </div>
 </section>
