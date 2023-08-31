@@ -73,8 +73,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 Capybara.register_driver :selenium do |app|
-  options = Selenium::WebDriver::Chrome::Options.new(binary: 'C:\Program Files\Google\Chrome\chromedriver')
+  options = Selenium::WebDriver::Chrome::Options.new(binary: 'C:\Program Files\Google\Chrome\Application\chrome.exe')
   Capybara::Selenium::Driver.new(app, browser: :chrome, options:)
 end
 
-Capybara.default_driver = :selenium_chrome
+Capybara.javascript_driver = :selenium
