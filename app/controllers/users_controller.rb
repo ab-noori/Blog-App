@@ -7,4 +7,3 @@ class UsersController < ApplicationController
     @user = User.includes(:posts).find(params[:id])
   end
 end
-
