@@ -6,7 +6,7 @@
     <p class="col-lg-6 col-md-12"><%= @user.bio %></p>
   </div>
 
-  <% @recent_posts.each do |post| %>
+  <% @user.recent_posts.each do |post| %>
     <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post_partial" do %>
       <%= render partial: 'shared/post_summary', locals: { post: post } %>
     <% end %>

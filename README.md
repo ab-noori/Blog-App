@@ -141,6 +141,12 @@ To run tests, run the following command:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdulali-noori](https://www.linkedin.com/in/abdulali-noori)
 
+👤 **Kifle Haile**
+
+- GitHub: [@githubhandle](https://github.com/kifle23)
+- Twitter: [@twitterhandle](https://twitter.com/KifleHaile12)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kifle-haile)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
