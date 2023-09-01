@@ -61,3 +61,20 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+require 'capybara/rspec'
+require 'selenium-webdriver'
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
+Capybara.register_driver :selenium do |app|
+  options = Selenium::WebDriver::Chrome::Options.new(binary: 'C:\Program Files\Google\Chrome\Application\chrome.exe')
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options:)
+end
+
+Capybara.javascript_driver = :selenium
