@@ -293,7 +293,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   rubocop (>= 1.0, < 2.0)
-  selenium-webdriver (= 4.11.0)
+  selenium-webdriver
   shoulda-matchers (~> 5.0)
   sprockets-rails
   stimulus-rails
