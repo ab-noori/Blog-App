@@ -6,6 +6,11 @@ class UsersController < DeviseController
   end
 
   def show
-    @user = User.includes(:posts).find(params[:id])
+    if params[:id] == 'sign_out'
+      sign_out current_user
+      redirect_to users_path
+    else
+      @user = User.includes(:posts).find(params[:id])
+    end
   end
 end
