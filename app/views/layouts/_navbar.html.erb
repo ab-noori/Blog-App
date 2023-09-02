@@ -1,12 +1,14 @@
 <nav class="navbar navbar-default bg-dark">
-  <li class="navbar-brand ml-5"><%= link_to 'Blog Application', root_path %></li>
-  <ul class="navbar-brand navbar-right mr-5">
+  <ul class="ml-lg-5">
+    <li class="navbar-brand"><%= link_to 'Blog Application', root_path, class: "navbar-link"%></li>
+  </ul>
+  <ul class="navbar-right mr-5">
     <% if user_signed_in? %>
-      <li class="nav-item"> <%= current_user.email %> </li>
-      <li class="nav-item"> <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "navbar-link" %></li>
+      <li class="navbar-brand"> <%= link_to "New Post", new_user_post_path(current_user)%> </li>
+      <li class="navbar-brand"> <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "navbar-link" %></li>
     <% else %>
-      <li class="nav-item"><%= link_to "Sign In", new_user_session_path, class: "navbar-link" %></li>
-      <li class="nav-item"><%= link_to "Sign Up", new_user_registration_path, class: "navbar-link" %></li>
+      <li class="navbar-brand"><%= link_to "Sign In", new_user_session_path, class: "navbar-link" %></li>
+      <li class="navbar-brand"><%= link_to "Sign Up", new_user_registration_path, class: "navbar-link" %></li>
     <% end %>
   </ul>
 </nav>
