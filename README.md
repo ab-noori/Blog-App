@@ -2,7 +2,7 @@
 
 > # Blog Application
 
-| Project ERD |
+| Project Login Page |
 |---------------------------------------|
 |<div align="center"><img src="login.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 
@@ -75,7 +75,8 @@
 - **[Add Devise and authorization rules]**
 - **[Integration specs for Views]**
 - **[API documentation]**
-| Implemented Schema ERD |
+
+| Implemented Schema's ERD |
 |---------------------------------------|
 |<div align="center"><img src="https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png" alt="screenshot" width="auto" height="auto"/></div>|
 
