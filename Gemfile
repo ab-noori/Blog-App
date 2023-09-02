@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7'
 
@@ -58,7 +60,6 @@ group :development, :test do
 
   # The following gems aids with the nuts and bolts
   # of interacting with the browser.
-  gem 'selenium-webdriver', '4.11.0'
   gem 'webdrivers'
 end
 
@@ -75,4 +76,11 @@ group :development do
   # gem "spring"
 end
 
-gem 'rubocop', '>= 1.0', '< 2.0'
+group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'selenium-webdriver'
+end
+
+gem 'devise'
+
+gem 'letter_opener', group: :development

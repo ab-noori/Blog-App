@@ -2,9 +2,10 @@
 
 > # Blog Application
 
-| Project ERD |
+| Project Login Page |
 |---------------------------------------|
-|<div align="center"><img src="https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="login.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+
 
 <a name="readme-top"></a>
 
@@ -43,6 +44,7 @@
   <ul>
     <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   </ul>
 </details>
 
@@ -74,6 +76,10 @@
 - **[Add Devise and authorization rules]**
 - **[Integration specs for Views]**
 - **[API documentation]**
+
+| Implemented Schema's ERD |
+|---------------------------------------|
+|<div align="center"><img src="https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/images/blog_app_erd.png" alt="screenshot" width="auto" height="auto"/></div>|
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

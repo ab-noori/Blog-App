@@ -16,10 +16,9 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-dark bg-dark">
-      <li class="navbar-brand ml-5"><%= link_to 'Blog Application', root_path %></li>
-      <li class="navbar-brand navbar-right mr-5"><%= link_to 'Create a Post', new_user_post_path(@current_user) %></li>
-    </nav>
+    <%= render partial: "layouts/navbar"%>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
